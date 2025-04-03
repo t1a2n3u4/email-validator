@@ -1,0 +1,55 @@
+<!--the idea of this project is that if you put any email then you will be able to know whether the email exist or not . it can be useful when you want to send an email to your
+signup or any other work on selected emails.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RINI E-MAIL VALIDATOR </title>
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <img src="img/email.svg" alt="svg">
+     <span> Rini</span></div>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">About</a></li>
+    <li><a href="/">Contact</a></li>
+   
+</ul>
+    </nav>
+</header>
+    <main>
+<div class="container">
+    <h2>Enter Your E-Mail to validate</h2>
+    
+    <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <input placeholder="your email to validate" type="text" id="username" name="username" required>
+        <br><br>
+    
+        
+        <input id="submitbtn" class="btn" type="submit" value="Submit">
+      </form>
+</div>
+<div class="container">
+    <h2>your Results</h2>
+    <div id="resultcont" >
+result wiil be here 
+<img width="233" src="img/loading.svg"alt="fg">
+
+
+    </div>
+</div>
+    </main>
+    <footer>
+        Copyright | Rini.com|All Rights Reserved
+
+    </footer>
+   <script src="email.js"></script> 
+</body>
+</html>
