@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+padding: 0;
+margin: 1;
+
+        font-family: "inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    background-color: slategrey;
+    color: rgb(29, 18, 1);
+    padding: 8px;
+}
+ul {
+    display: flex;
+ 
+}
+
+ul li{
+    list-style: none;
+    padding: 0 13px;
+    font-size: 13px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul >li>a:hover{
+color: aliceblue;
+}
+main{
+    min-height: 90vh;
+    padding: 2px;
+}
+.logo img{
+    width: 22px;
+    filter: invert(1);
+}
+.logo span{
+    font-size: 25px;
+}
+
+
+.container{
+    background-color: rgb(124, 173, 214);
+    max-height: 80vw;
+    margin: auto;
+    padding: 12px;
+}
+#resultcont div::first-letter{
+    text-transform: uppercase;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    padding: 8px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: rgb(94, 148, 148);
+    }
+    .container{
+        font-size: 12px;
+    }
+    .btn{
+        
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 12px;
+    background-color: black;
+    cursor: pointer;
+
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 7px 0;
+    }
+    .logo img{
+        width: 22px;
+        filter: invert(1);
+    }
+}
